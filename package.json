@@ -1,0 +1,36 @@
+﻿{
+    "name":  "opencode-telegram-bot",
+    "version":  "1.0.0",
+    "description":  "",
+    "main":  "index.js",
+    "scripts":  {
+                    "dev":  "tsx watch src/bot.ts",
+                    "build":  "tsc",
+                    "start":  "node dist/bot.js"
+                },
+    "keywords":  [
+
+                 ],
+    "author":  "",
+    "license":  "ISC",
+    "devEngines":  {
+                       "packageManager":  {
+                                              "name":  "pnpm",
+                                              "version":  "^11.22.0",
+                                              "onFail":  "download"
+                                          }
+                   },
+    "type":  "module",
+    "dependencies":  {
+                         "@grammyjs/runner":  "^2.0.3",
+                         "dotenv":  "^18.0.7",
+                         "grammy":  "^1.46.0",
+                         "tree-kill":  "^1.2.2",
+                         "zod":  "^4.6.5"
+                     },
+    "devDependencies":  {
+                            "@types/node":  "^26.6.5",
+                            "tsx":  "^4.23.15",
+                            "typescript":  "^7.0.2"
+                        }
+}
